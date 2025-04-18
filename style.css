@@ -8,48 +8,34 @@ body {
     color:#ffffff;
 }
 
-.grid-container{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas:"header header header"
-                        "nav    nav     nav"
-                        "section section section"
-                        "foo    foo     foo";
+.grid_container {
+    display: grid;
+    grid-template-columns:3fr;
+    grid-template-areas: "header header nav"
+                         "section section section"
+                         "footer footer footer";
 }
 
 header {
-    position:fixed;
+    display:flex;
+    grid-area: header;
+    padding: 20px;
+    gap:20px;
+    align-items:center;
+    justify-content: space-between;
 }
 
 nav {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items:center;
-    margin-bottom:10px;
-    grid-area: nav;
-    color:#ffffff;
-}
-
-nav h2 {
-    text-align: center;
-    justify-content: center;
-}
-
-.link_cont {
     display: flex;
-    position:absolute;
-    align-items:center;
+    align-items: center;
+    grid-area: nav;
     gap:20px;
-    right:0;
-    top: 0;
-    padding:10px;
 }
-
 .nav__a{
     color: #ffffff;
     font-weight: 600;
     text-decoration: none;
+    align-items: end;
 }
 
 .nav__a:hover {

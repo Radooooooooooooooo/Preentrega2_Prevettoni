@@ -7,61 +7,66 @@
     <link href="style.css" rel="stylesheet">
     <title>CineFan</title>
 </head>
-<body>
-</body>
+<body id="grid_container">
     <header>
-        <h1>Cinefan</h1>
-    </header>
-    <nav>
-        <h2>Peliculas Populares</h2>
-        <div class="link_cont">
-            <a href="pages/pool.html" class="nav__a" target="_blank" rel="noopener">Proxima semana</a>
+    <h1>Cinefan</h1>
+    <h2>Películas Populares</h2>
+        <nav>
+            <a href="pages/pool.html" class="nav__a" target="_blank" rel="noopener">Próxima   semana</a>
             <a href="pages/foro.html" class="nav__a" target="_blank" rel="noopener">Foro</a>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <section id="carouselExample" class="carousel slide">
-        <article class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="assets/br.png" class="d-block w-100" alt="banner 1">
-            </div>
-            <div class="carousel-item">
-            <img src="assets/Black_Mirror.png" class="d-block w-100" alt="banner 2">
-            </div>
-            <div class="carousel-item">
-            <img src="assets/carouselitem.png" class="d-block w-100" alt="banner 3">
-            </div>
-        </article>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    <article class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="assets/br.png" class="d-block w-100" alt="banner 1">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/Black_Mirror.png" class="d-block w-100" alt="banner 2">
+        </div>
+        <div class="carousel-item">
+        <img src="assets/carouselitem.png" class="d-block w-100" alt="banner 3">
+        </div>
+    </article>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
     </section>
+
     <div class="form_container">
-        <h1 class="foo__h1">Envianos tu feedback!</h1>
-        <form class="form-reseña" action="">
-            <label class="form-reseña__label">Nombre</label>
-            <input class="form-reseña__input" type="text">
-            <labe class="form-reseña__label">Email</labe>
-            <input class="form-reseña__input" type="email">
-            <label class="form-reseña__label">Pelicula</label>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">Breaking Bad</option>
-                <option value="2">Black Mirror</option>
-                <option value="3">El secreto de los 3 cuerpos</option>
-            </select>
-            <label class="form-reseña__label">Contanos que te parecio!</label>
-            <textarea class="form-reseña--feedback" type="text"></textarea>
-            <button type="submit" class="form-reseña__button">Enviar</button>
-        </form>
+    <h1 class="foo__h1">¡Envíanos tu feedback!</h1>
+    <form class="form-reseña" action="">
+        <label class="form-reseña__label">Nombre</label>
+        <input class="form-reseña__input" type="text">
+
+        <label class="form-reseña__label">Email</label>
+        <input class="form-reseña__input" type="email">
+
+        <label class="form-reseña__label">Película</label>
+        <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">Breaking Bad</option>
+        <option value="2">Black Mirror</option>
+        <option value="3">El secreto de los 3 cuerpos</option>
+        </select>
+
+        <label class="form-reseña__label">¡Contanos qué te pareció!</label>
+        <textarea class="form-reseña--feedback" type="text"></textarea>
+
+        <button type="submit" class="form-reseña__button">Enviar</button>
+    </form>
     </div>
+
     <footer class="foo">
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"   integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
