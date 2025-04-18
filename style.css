@@ -23,9 +23,10 @@ header {
 
 nav {
     display:flex;
+    flex-wrap: wrap;
     justify-content:center;
     align-items:center;
-    margin-bottom:0.625rem;
+    margin-bottom:10px;
     grid-area: nav;
     color:#ffffff;
 }
