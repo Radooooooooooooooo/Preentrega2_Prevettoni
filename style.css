@@ -101,6 +101,17 @@ input:focus {
     color:blue;
 }
 
+/* pool */
+
+.header__a {
+    display: inline-block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+}
+
 
 @media (max-width:576px) {
     .link_cont {
