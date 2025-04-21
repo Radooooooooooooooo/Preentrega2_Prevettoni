@@ -104,6 +104,36 @@ input:focus {
 }
 
 /* pool */
+.encuesta-header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel {
+    width:100%;
+    max-width:50%;
+    margin-left:25rem;
+}
+
+.form-select{
+    width: 100%;
+    max-width:50%;
+}
+
+.foo-pool__button {
+    width:50%;
+}
+
+.footer_-button:hover{
+    color: #1c1c1c;
+}
+
+.foo-pool {
+    margin-left: 25rem;
+}
+
+/* pool */
 
 .header-foro {
     display:flex;
