@@ -3,6 +3,9 @@
     padding:0;
 }
 
+
+
+
 body {
     background-color:#1c1c1c;
     color:#ffffff;
@@ -26,7 +29,7 @@ header {
 }
 
 .txt {
-    color:#d32f2f;
+    color:#f1f1f1;
 }
 
 nav {
@@ -36,16 +39,15 @@ nav {
     gap:20px;
 }
 .nav__a{
-    color: #ffffff;
     font-weight: 600;
     text-decoration: none;
     align-items: end;
-    color:#d32f2f;
+    color:#00ffff;
 }
 
 .nav__a:hover {
     text-decoration:underline;
-    color: red;
+    color:#1e90ff;
 }
 
 .form__button svg {
@@ -72,7 +74,7 @@ footer {
 
 .form_container h1{
     text-align:center;
-    color:#d32f2f;
+    color:#f1f1f1;
 }
 
 .form-reseña {
@@ -103,15 +105,52 @@ input:focus {
 
 /* pool */
 
-.header__a {
-    display: inline-block;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-    text-decoration: none;
+.header-foro {
+    display:flex;
+    position: relative;
+    justify-content:center;
+    align-items: center;
 }
 
+.forum-container {
+    display:flex;
+    flex-direction: column;
+    margin:2rem;
+    gap:20px;
+}
+
+.forum-container__form {
+    display:flex;
+    flex-direction: column;
+    border: 2px solid #00ffff;
+    width:100%;
+    max-width:25%;
+}
+
+.encabezado {
+    color: #00ffff;
+}
+
+.form__input:hover{
+    color: #00ffff;
+}
+
+.form__textarea {
+    height:5rem;
+}
+
+.header__a {
+    position: absolute;
+    text-decoration:none;
+    left:20px;
+    top:25px;
+    color: #00ffff;
+}
+
+.header__a:hover{
+    text-decoration: underline;
+    color: #1e90ff;
+}
 
 @media (max-width:576px) {
     .link_cont {

@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="../style.css" rel="stylesheet">
+    <title>Foro</title>
 </head>
 <body>
-    
+    <header class="header-foro txt">
+        <a href="../index.html" class="header__a">Volver</a>
+        <h1>Foro de debate de peliculas</h1>
+    </header>
+    <section class="forum-container">
+        <h2 class="encabezado">Tema de debate</h2>
+        <article class="forum-container__article">
+            <h3 class="encabezado">¿Cual es la mejor pelicula de todos los tiempos?</h3>
+            <p>Inicia un debate sobre tus peliculas favoritas</p>
+        </article>
+        <article class="topic">
+            <h3 class="encabezado">Las mejores peliculas de 2024</h3>
+            <p>Comparte tus experiencias con peliculas del 2024</p>
+        </article>
+        <article class="topic">
+            <h3 class="encabezado">¿Cual es la pelicula o serie mas esperada para este 2025?</h3>
+            <p>Inicia un debate sobre la pelicula que para vos es la mas esperada este año</p>
+        </article>
+        <h2 class="encabezado">Añadir un nuevo tema de debate</h2>
+        <form action="#" method="post" class="forum-container__form">
+            <input type="text" name="titulo" placeholder="Titulo del tema" required>
+            <textarea name="Descripcion del tema a debatir" class="form__textarea" required></textarea>
+            <input type="submit" value="añadir tema" class="form__input">
+        </form>
+    </section>
 </body>
 </html>
