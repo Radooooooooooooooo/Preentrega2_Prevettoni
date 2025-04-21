@@ -69,7 +69,7 @@ section {
 }
 
 footer {
-    grid-area:foo;
+    grid-area:footer;
 }
 
 .form_container h1{
@@ -192,7 +192,7 @@ input:focus {
 }
 
 @media (max-width:576px){
-    body {
+    .grid_container {
         display: grid;
         grid-template-columns:repeat(3, 1fr);
         grid-template-areas:"header header header"
@@ -220,6 +220,15 @@ input:focus {
         position:absolute;
         left: 0;
         top: 0;
+    }
+    .form-reseña {
+        align-items:stretch;
+        max-width:500px;
+    }
+    .form_container {
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
 }
 
