@@ -152,6 +152,15 @@ input:focus {
     color: #1e90ff;
 }
 
+.mb-3__button {
+    width:100%;
+    max-width:100%;
+}
+
+.mb-3__button:hover{
+    color: #1e90ff;
+}
+
 @media (max-width:576px) {
     .link_cont {
         gap:5px;
