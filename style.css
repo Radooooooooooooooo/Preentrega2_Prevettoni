@@ -113,7 +113,7 @@ input:focus {
 .carousel {
     width:100%;
     max-width:50%;
-    margin-left:25rem;
+    margin-left:20rem;
 }
 
 .form-select{
@@ -191,8 +191,63 @@ input:focus {
     color: #1e90ff;
 }
 
-@media (max-width:576px) {
-    .link_cont {
-        gap:5px;
+@media (max-width:576px){
+    body {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:"header header header"
+                            "carusel carusel carusel"
+                            "foo    foo     foo";
+    }
+    header{
+        grid-area: header;
+    }
+    .carousel{
+        width: 100%;
+        height: auto;
+        display: block;
+        grid-area:carusel;
+        margin:0 auto;
+    }
+    .foo-pool {
+        grid-area:foo;
+        margin: 0 auto;
+    }
+    .header-foro{
+        margin: 0 auto;
+    }
+    .header__a {
+        position:absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (max-width:768px){
+    body {
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "header header header header"
+                             "carusel carusel carusel carusel"
+                             "foo   foo     foo     foo";
+    }
+    .header{
+        grid-area: header;
+    }
+    .carousel {
+        margin: 0 auto;
+        grid-area: carusel;
+    }
+    .foo-pool {
+        margin: 0 auto;
+        grid-area:foo;
+    }
+}
+
+@media (max-width:992px){
+    .carousel {
+        margin: 0 auto;
+    }
+    .foo-pool{
+        margin:0 auto;
     }
 }
